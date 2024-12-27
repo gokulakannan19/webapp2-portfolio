@@ -4,3 +4,4 @@ venv*
 pycache
 .xml
 .idea*
+.idea/*
