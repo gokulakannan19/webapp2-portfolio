@@ -25,11 +25,17 @@ st.write(content2)
 
 df = pd.read_csv(r"C:\Users\sanch\PythonProjects\app2-portfolio\data.csv", sep=";")
 
-col3, col4 = st.columns(2)
+col3, col4, col5 = st.columns([1.5, 0.5, 1.5])
 with col3:
     for index, row in df[:10].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[source code]({row['url']})")
 
-with col4:
+with col5:
     for index, row in df[10:].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[source code]({row['url']})")
