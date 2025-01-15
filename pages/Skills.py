@@ -3,25 +3,32 @@ import streamlit as st
 # --- SKILLS SECTION ---
 st.header("💡 Skills")
 
+# Detect Streamlit theme mode (light/dark)
+theme = st.get_option("theme.base")
+bg_color = "#f4f4f4" if theme == "light" else "#1e1e1e"
+text_color = "#000000" if theme == "light" else "#ffffff"
+shadow_color = "rgba(0, 0, 0, 0.1)" if theme == "light" else "rgba(255, 255, 255, 0.2)"
+
 # Custom CSS for skill cards
-st.markdown("""
+st.markdown(f"""
     <style>
-        .skill-card {
-            background-color: #f4f4f4;
+        .skill-card {{
+            background-color: {bg_color};
             border-radius: 10px;
             padding: 15px;
             margin: 10px;
             text-align: center;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .skill-title {
+            box-shadow: 2px 2px 10px {shadow_color};
+            color: {text_color};
+        }}
+        .skill-title {{
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 5px;
-        }
-        .emoji {
+        }}
+        .emoji {{
             font-size: 24px;
-        }
+        }}
     </style>
 """, unsafe_allow_html=True)
 
