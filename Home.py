@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 
@@ -23,7 +24,7 @@ Below you can find some of the apps i have built in python. Feel free to contact
 """
 st.write(content2)
 
-df = pd.read_csv(r"C:\Users\sanch\PythonProjects\app2-portfolio\data.csv", sep=";")
+df = pd.read_csv("data.csv", sep=";")
 
 col3, col4, col5 = st.columns([1.5, 0.5, 1.5])
 with col3:
