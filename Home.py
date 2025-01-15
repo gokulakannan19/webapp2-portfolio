@@ -23,11 +23,12 @@ st.divider()
 st.header("🛠 About Me")
 st.write("""
 With experience in **software development, cloud computing, and DevOps**, my expertise includes:  
-✅ **Python** (Django, FastAPI, Flask)  
-✅ **Cloud Platforms** (AWS, Azure)  
-✅ **CI/CD Pipelines** (GitHub Actions, GitLab CI/CD, Azure DevOps)  
+✅ **Python** (Django, Flask, Pandas)  
+✅ **Cloud Platforms** (AWS)  
+✅ **CI/CD Pipelines** (GitHub Actions, GitLab CI/CD)  
 ✅ **Microservices & REST APIs**  
-✅ **Infrastructure as Code (Terraform, Bash Scripting)**  
+✅ **Infrastructure as Code (Bash Scripting)**
+✅ **Database (MySQL, Postgresql)**  
 """)
 
 # --- CONTACT DETAILS ---
