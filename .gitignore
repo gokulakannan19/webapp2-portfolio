@@ -7,3 +7,5 @@ pycache
 .idea/*
 __pycache__
 *pycache*
+.idea
+*.idea
