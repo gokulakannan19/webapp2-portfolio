@@ -1,59 +1,51 @@
-import os
 import streamlit as st
-import pandas as pd
 
+# --- PAGE CONFIGURATION ---
+st.set_page_config(page_title="My Portfolio", page_icon="👨‍💻", layout="wide")
 
-st.set_page_config(layout="wide")
+# --- HEADER SECTION ---
+col1, col2 = st.columns([1, 3])
 
-image_urls = [
-    ("icon/call.png", "9788508855"),
-    ("https://example.com/image2.jpg", "https://example.com/link2")
-]
-
-col1, col2 = st.columns(2)
 with col1:
-    st.image("images/Gokulakannan.jpg", width=370)
+    st.image("images/Gokulakannan.jpg", width=200)  # Replace with your image file
 
 with col2:
-    st.title("Gokula Kannan")
-    content1 = """
-    Hi, I'm Gokula Kannan, a Software Engineer with 5 years of experience specializing in Python and Django. 
-    I'm proficient in Bash scripting, Pandas, and Git, 
-    and I'm passionate about building user-friendly and high-performing web applications.
-
-I'm always eager to learn and explore new technologies. 
-In my free time, I enjoy gym, watching films.
-
-Feel free to explore some of the projects I've built in Python"""
-
-    st.info(content1)
-
-    st.subheader("📞 Contact")
-    st.markdown("""
-    - **Phone:** [📞 +91 9788508844]
-    - **Email:** [📧 goks.cloud19@gmail.com](mailto:goks.cloud19@gmail.com)
+    st.title("👋 Hi, I'm Gokula Kannan!")
+    st.subheader("Software Engineer | Python Developer | DevOps Enthusiast")
+    st.write("""
+    🚀 Passionate about **building scalable applications, automating workflows, and designing cloud-based solutions**.  
+    💡 Always eager to learn and apply new technologies to solve real-world problems.  
     """)
 
 st.divider()
 
-content2 = """
-Below you can find some of the apps i have built in python. Feel free to contact me
-"""
-st.write(content2)
+# --- ABOUT ME SECTION ---
+st.header("🛠 About Me")
+st.write("""
+With experience in **software development, cloud computing, and DevOps**, my expertise includes:  
+✅ **Python** (Django, FastAPI, Flask)  
+✅ **Cloud Platforms** (AWS, Azure)  
+✅ **CI/CD Pipelines** (GitHub Actions, GitLab CI/CD, Azure DevOps)  
+✅ **Microservices & REST APIs**  
+✅ **Infrastructure as Code (Terraform, Bash Scripting)**  
+""")
 
-df = pd.read_csv("data.csv", sep=";")
+# --- CONTACT DETAILS ---
+# --- CONTACT & SOCIAL DETAILS ---
+st.header("📞 Get in Touch")
+st.markdown("📞 **Phone:** [+1-234-567-890](tel:+1234567890)")
+st.markdown("📧 **Email:** [example@email.com](mailto:example@email.com)")
+st.markdown("💻 **GitHub:** [github.com/yourusername](https://github.com/gokulakannan19)")
+st.markdown("🔗 **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/gokulakannan19)")
 
-col3, col4, col5 = st.columns([1.5, 0.5, 1.5])
-with col3:
-    for index, row in df[:10].iterrows():
-        st.header(row["title"])
-        st.write(row["description"])
-        st.image("images/" + row["image"])
-        st.write(f"[source code]({row['url']})")
-
-with col5:
-    for index, row in df[10:].iterrows():
-        st.header(row["title"])
-        st.write(row["description"])
-        st.image("images/" + row["image"])
-        st.write(f"[source code]({row['url']})")
+# # --- GET IN TOUCH SECTION ---
+# st.header("📬 Get in Touch")
+#
+# with st.form("contact_form"):
+#     name = st.text_input("Your Name")
+#     email = st.text_input("Your Email")
+#     message = st.text_area("Your Message")
+#
+#     submitted = st.form_submit_button("Send Message")
+#     if submitted:
+#         st.success("Thank you! I'll get back to you soon. 😊")
