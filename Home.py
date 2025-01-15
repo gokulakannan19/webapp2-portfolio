@@ -5,19 +5,36 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
+image_urls = [
+    ("icon/call.png", "9788508855"),
+    ("https://example.com/image2.jpg", "https://example.com/link2")
+]
+
 col1, col2 = st.columns(2)
 with col1:
-    st.image("images/Gokulakannan.jpg")
+    st.image("images/Gokulakannan.jpg", width=370)
 
 with col2:
     st.title("Gokula Kannan")
     content1 = """
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
-    """
+    Hi, I'm Gokula Kannan, a Software Engineer with 5 years of experience specializing in Python and Django. 
+    I'm proficient in Bash scripting, Pandas, and Git, 
+    and I'm passionate about building user-friendly and high-performing web applications.
+
+I'm always eager to learn and explore new technologies. 
+In my free time, I enjoy gym, watching films.
+
+Feel free to explore some of the projects I've built in Python"""
+
     st.info(content1)
+
+    st.subheader("📞 Contact")
+    st.markdown("""
+    - **Phone:** [📞 +91 9788508844]
+    - **Email:** [📧 goks.cloud19@gmail.com](mailto:goks.cloud19@gmail.com)
+    """)
+
+st.divider()
 
 content2 = """
 Below you can find some of the apps i have built in python. Feel free to contact me
