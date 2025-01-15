@@ -1,16 +1,17 @@
 import os
 import smtplib
 import ssl
+import streamlit as st
 
 
 def send_email(message):
     host = "smtp.gmail.com"
     port = 465
-    username = "####"  # Replace with your actual Gmail username
-    password = os.getenv("APP_PASSWORD") # Replace with your Gmail app password (not your regular password)
+    username = st.secrets["USERNAME"]  # Replace with your actual Gmail username
+    password = st.secrets["PASSWORD"] # Replace with your Gmail app password (not your regular password)
     # Create a secure SSL context
     context = ssl.create_default_context()
-    receiver = "####"  # Replace with the recipient's email address
+    receiver = st.secrets["RECEIVER"]  # Replace with the recipient's email address
 
     try:
         # Connect to the SMTP server using SMTP_SSL
