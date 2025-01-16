@@ -34,10 +34,10 @@ With experience in **software development, cloud computing, and DevOps**, my exp
 # --- CONTACT DETAILS ---
 # --- CONTACT & SOCIAL DETAILS ---
 st.header("📞 Get in Touch")
-st.markdown("📞 **Phone:** [+1-234-567-890](tel:+1234567890)")
-st.markdown("📧 **Email:** [example@email.com](mailto:example@email.com)")
-st.markdown("💻 **GitHub:** [github.com/yourusername](https://github.com/gokulakannan19)")
-st.markdown("🔗 **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/gokulakannan19)")
+st.markdown("📞 **Phone:** [+91 9788508844](tel:+1234567890)")
+st.markdown("📧 **Email:** [goks.cloud19@gmail.com](mailto:goks.cloud19@gmail.com)")
+st.markdown("💻 **GitHub:** [github.com/gokulakannan19](https://github.com/gokulakannan19)")
+st.markdown("🔗 **LinkedIn:** [linkedin.com/in/gokulakannan19](https://linkedin.com/in/gokulakannan19)")
 
 # # --- GET IN TOUCH SECTION ---
 # st.header("📬 Get in Touch")
